@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    padding: 0 1rem ;
+}
+header{
+    padding: 6px 0;
+    background-color:#87878731 ;
+}
+header .allheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .left{
+    width: 32%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+header svg{
+    margin: 0 5px;
+}
+header a{
+    margin-right: 10px;
+    color: #878787;
+    transition: .4s;
+    font-weight: bold;
+}
+header a:hover{
+    color: #81D8E6;
+}
+header .center{
+    width: 32%;
+    color: #878787;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+header .center p strong{
+    color: #ec0101;
+}
+header .center p a{
+    font-weight: bold;
+}
+header .right{
+    width: 32%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    justify-content: end;
+}
+header .right img{
+    margin-left: 10px;
+    width: 15px;
+}
+header .right svg{
+    width: 10px;
+    margin:0 5px;
+}
+@media(max-width:576px){
+    .allheader{
+        display: flex;
+        flex-direction: column;
+    }
+    .allheader .left{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .allheader .center{
+        margin-top: 6px;
+        width: 100%;
+    }
+    .allheader .right{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+nav{
+    padding: 30px 0;
+}
+nav .allnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .allnav .left{
+    width: 22%;
+    margin-left: 15px;
+    text-align: left;
+    cursor: pointer;
+}
+nav .allnav .left img{
+    width: 50%;
+}
+nav .allnav .center{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav .allnav .center a{
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #333;
+    margin-left: 30px;
+    transition: .4s;
+    position: relative;
+}
+nav .allnav .center a:hover{
+    color: #56cfe1;
+}
+nav .allnav .right{
+    width: 20%;
+    text-align: right;
+    cursor: pointer;
+    position: relative;
+}
+nav .allnav .right i{
+    margin-left: 25px;
+    font-size: 20px;
+    transition: .4s;
+}
+nav .allnav .right i:hover{
+    color: #00badb;
+    transform: scale(1.1);
+}
+nav a span{
+    position: absolute;
+    top: -14px;
+    font-size: 10px;
+    right: -10px;
+    background: #00badb;
+    color: #fff;
+    border-radius: 30px;
+    padding: 1px 7px;
+}
+nav .right .left1{
+    position: absolute;
+    top: -10px;
+    font-size: 10px;
+    right: -7px;
+    background: #333;
+    color: #fff;
+    border-radius: 50%;
+    padding: 1px 5px;
+    z-index: 1;
+}
+nav .right .right2{
+    position: absolute;
+    top: -10px;
+    font-size: 10px;
+    right: 40px;
+    background: #333;
+    color: #fff;
+    border-radius: 50%;
+    padding: 1px 5px;
+    z-index: 1;
+}
+#nav-phone{
+    display: none;
+}
+#nav-phone .allnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+#nav-phone .allnav .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav-phone .allnav .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav-phone .allnav .center img{
+    width: 120px;
+    text-align: center;
+}
+#nav-phone .allnav .right i{
+    font-size: 25px;
+    margin-left: 5px;
+}
+@media(max-width:576px){
+    nav{
+        display: none;
+    }
+    #nav-phone{
+        display: block;
+    }
+}
+#first{
+    background-image: url(https://cdn.shopify.com/s/files/1/0616/9480/4174/files/2_3000x.jpg?v=1652056793);
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+#first .all-first .all {
+    width: 50%;
+    position: absolute;
+    left: 7rem;
+    top: 15rem;
+}
+
+#first h3{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+}
+#first h1{
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+#first .text a{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 30px;
+    font-weight: bold;
+    line-height: 14px;
+    transition: .4s;
+    position: relative;
+}
+#first .text a::after{
+    overflow: hidden;
+    content: "Begin";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0px;
+    background-color: #00badb;
+    transition: .5s;
+    color: #fff;
+}
+#first .text a:hover::after{
+    height: 100%;
+
+}
+#first-phone{
+    display: none;
+}
+#first-phone .all-first{
+    background-image: url(https://cdn.shopify.com/s/files/1/0616/9480/4174/files/2_750x.jpg?v=1652056793);
+    background-position: center;
+    padding: 4rem;
+}
+#first-phone .text h3{
+    font-size: 15px;
+}
+#first-phone .text h1{
+    margin-bottom: 20px;
+}
+#first-phone .text a{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 30px;
+    font-weight: bold;
+    line-height: 14px;
+}
+#first-phone .text{
+    text-align: center;
+}
+@media(max-width:576px){
+    #first{
+        display: none;
+    }
+    #first-phone{
+        display: block;
+    }
+}
